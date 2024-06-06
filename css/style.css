@@ -303,6 +303,22 @@ a.img-link img {
   width: -webkit-fill-available;
 }
 
+.start {
+  height: 100dvh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 99999999;
+}
+
+a.start-button {
+  color: white;
+  font-size: 2rem;
+}
+
 /* Untuk Desktop Lebar */
 @media only screen and (min-width: 1981px) {
   .main-frame {

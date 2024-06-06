@@ -77,8 +77,27 @@
       <img src="./assets/frame.png" alt="" class="iphone-frame" />
     </div>
 
+    <div class="start">
+      <a class="start-button" onclick="startMusic()">Start</a>
+    </div>
+
+    <audio id="myAudio">
+      <source src="./assets/sound.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
     <script src="js/recog.js"></script>
     <script src="js/copyca.js"></script>
+
+    <script>
+      function startMusic() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+
+        var startDiv = document.querySelector(".start");
+        startDiv.style.display = "none";
+      }
+    </script>
 
     <script>
       function fillDataCA() {
