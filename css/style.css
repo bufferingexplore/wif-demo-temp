@@ -18,6 +18,10 @@ body {
   background-size: cover;
 }
 
+.circle {
+  display: none !important;
+}
+
 .main-frame {
   width: 380px;
   position: relative;
