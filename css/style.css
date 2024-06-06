@@ -341,78 +341,8 @@ a.img-link img {
 
 /* Untuk Phone Biasa */
 @media only screen and (min-width: 380px) and (max-width: 480px) {
-  .iphone-frame {
-    display: none;
-  }
-
-  .row-1 {
-    padding-top: 2rem;
-  }
-
-  .welcome-area {
-    border-radius: 0rem;
-    width: 100% !important;
-    height: 50%;
-  }
-
-  .information-area {
-    border-radius: 0rem;
-    width: 100% !important;
-  }
-
-  .main-frame {
-    transform: scale(1);
-    max-height: 100dvh;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    border-radius: 0px;
-  }
-
-  .row-2 .normal-text {
-    margin-bottom: 2rem;
-  }
-
-  .row-1 {
-    padding-top: 1.5rem !important;
-  }
 }
 
 /* Untuk Phone Kecil */
 @media only screen and (max-width: 379px) {
-  .iphone-frame {
-    display: none;
-  }
-
-  .row-1 {
-    padding-top: 2rem;
-  }
-
-  .welcome-area {
-    border-radius: 0rem;
-    width: 100% !important;
-    height: 50%;
-  }
-
-  .information-area {
-    border-radius: 0rem;
-    width: 100% !important;
-  }
-
-  .main-frame {
-    transform: scale(1);
-    max-height: 100dvh;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    border-radius: 0px;
-  }
-
-  .row-2 .normal-text {
-    margin-bottom: 2rem;
-  }
-
-  .row-1 {
-    padding-top: 1.5rem !important;
-  }
 }
