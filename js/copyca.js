@@ -6,7 +6,7 @@ function copyToClipboard() {
     navigator.clipboard.writeText(copyText).then(
       function () {
         var copyBtn = document.querySelector(".copyBtn");
-        copyBtn.innerHTML = '<div class="circle">100%</div> Copied &nbsp;';
+        copyBtn.innerHTML = '<div class="circle">100%</div> Copied';
         setTimeout(function () {
           copyBtn.innerHTML = '<div class="circle">100%</div> Copy CA &nbsp;';
         }, 2000);
