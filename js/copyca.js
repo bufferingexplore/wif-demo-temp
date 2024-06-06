@@ -30,9 +30,9 @@ function copyToClipboard() {
     try {
       var result = document.execCommand("copy");
       var copyBtn = document.querySelector(".copyBtn");
-      copyBtn.innerHTML = '<div class="circle">100%</div> Success Copy &nbsp;';
+      copyBtn.innerHTML = '<div class="circle">100%</div> Copied';
       setTimeout(function () {
-        copyBtn.innerHTML = '<div class="circle">100%</div> Copy CA &nbsp;';
+        copyBtn.innerHTML = '<div class="circle">100%</div> Copy CA';
       }, 2000);
     } catch (err) {
       console.error("Error copying text: ", err);
