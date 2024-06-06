@@ -8,7 +8,7 @@ function copyToClipboard() {
         var copyBtn = document.querySelector(".copyBtn");
         copyBtn.innerHTML = '<div class="circle">100%</div> Copied';
         setTimeout(function () {
-          copyBtn.innerHTML = '<div class="circle">100%</div> Copy CA &nbsp;';
+          copyBtn.innerHTML = '<div class="circle">100%</div> Copy CA';
         }, 2000);
       },
       function (err) {
