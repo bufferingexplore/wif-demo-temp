@@ -475,6 +475,7 @@ a.start-button {
   cursor: pointer;
   align-items: center;
   z-index: 999;
+  transform: scale(2.5);
 }
 
 .icon-start img {
@@ -530,6 +531,10 @@ a.start-button {
   .main-frame {
     transform: scale(1);
   }
+
+  .icon-start {
+    transform: scale(1.5);
+  }
 }
 
 /* Untuk Tablet Mini */
@@ -547,7 +552,7 @@ a.start-button {
   }
 
   .icon-start {
-    transform: scale(1);
+    transform: scale(2.2);
   }
 }
 
