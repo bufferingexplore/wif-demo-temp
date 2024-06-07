@@ -1,5 +1,123 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-Black.otf") format("opentype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-Heavy.otf") format("opentype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-HeavyItalic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-Light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-RegularItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-Semibold.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-SemiboldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-Thin.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-ThinItalic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-Ultralight.otf") format("opentype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-UltralightItalic.otf")
+    format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+
 body,
 html {
   margin: 0;
@@ -314,6 +432,17 @@ a.img-link img {
   z-index: 99999999;
 }
 
+.start .main-frame .ios-notch {
+  position: absolute;
+  top: 0;
+  width: calc(100% - 20px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  max-width: -webkit-fill-available;
+}
+
 a.start-button {
   color: white;
   font-size: 2rem;
@@ -336,6 +465,37 @@ a.start-button {
 
 .ios-notch .battery img {
   padding-right: 28px;
+}
+
+.icon-start {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  z-index: 999;
+}
+
+.icon-start img {
+  height: 15dvh;
+  width: 15dvh;
+}
+
+.icon-start a {
+  font-family: "SF Pro Text" !important;
+  font-weight: 600;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.start-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  position: relative;
 }
 
 /* Untuk Desktop Lebar */
@@ -384,6 +544,10 @@ a.start-button {
 @media only screen and (min-width: 380px) and (max-width: 480px) {
   .main-frame {
     transform: scale(0.75) !important;
+  }
+
+  .icon-start {
+    transform: scale(1);
   }
 }
 
